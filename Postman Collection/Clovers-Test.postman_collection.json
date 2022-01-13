@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "4ee84b31-5277-4e19-80ac-d3682c95c88b",
+		"name": "Clovers-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/student",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Admin_Pass",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "key=\tAAAArG9AgNE:APA91bELQD8xyrXAi2pLhgBPwow8RUyPrzp_mKYVrO5V6InrAbMGnBBo42K-c4mwA2BGVF_fTA1xJNoLr93ioam5JSPzYyJ1CTtrrCIGJ9dCQF0D0kCEJPXnisjrDyXHoT1XfbGsxoYD",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\": \"jean\",\r\n    \"lastname\": \"kassouf\",\r\n    \"age\": 30,\r\n    \"major\": \"Computer Science\",\r\n    \"skills\": \"PHP, .Net , Flutter\",\r\n    \"addressCountry\": \"Lebanon\",\r\n    \"city\": \"Beirut\",\r\n    \"postcode\": 961,\r\n    \"additionalInfo\": \"Swimming,...\",\r\n    \"diplomas\": \"BS\",\r\n    \"yearOfGraduation\": 2019,\r\n    \"school\": \"Oriental College\",\r\n    \"educationCountry\": \"Lebanon\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/student/61e085755948ab8f18707996",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Admin_Pass",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\": \"jean\",\r\n    \"lastname\": \"kassouf\",\r\n    \"age\": 29,\r\n    \"major\": \"Computer Science\",\r\n    \"skills\": \"PHP, .Net , Flutter\",\r\n    \"addressCountry\": \"Lebanon\",\r\n    \"city\": \"Beirut\",\r\n    \"postcode\": 961,\r\n    \"additionalInfo\": \"Swimming,...\",\r\n    \"diplomas\": \"BS\",\r\n    \"yearOfGraduation\": 2019,\r\n    \"school\": \"Oriental College\",\r\n    \"educationCountry\": \"Lebanon\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/student/61e085755948ab8f18707996",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"student",
+						"61e085755948ab8f18707996"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/student/61e085755948ab8f18707996",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Admin_Pass",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/student/61e085755948ab8f18707996",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"student",
+						"61e085755948ab8f18707996"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
